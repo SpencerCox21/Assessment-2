@@ -23,7 +23,14 @@
 
 //CODE HERE
 
+let greetUser = (input) => {
+    return `Welcome back, ${input}!`
+}
 
+
+
+
+console.log(greetUser('Andrew'));
 
 
 
@@ -56,8 +63,18 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 
+const canWeDeliver = function(input) {
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if (input === deliveryAreaZipCodes[i]){
+            return `You're in our delivery zone!`
+        }
+    }
+ 
+    return `Sorry, we can't deliver to that address`
+}
 
 
+console.log(canWeDeliver(85205))
 
 
 
@@ -83,10 +100,17 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 // CODE HERE
 
 
+function canWeDeliverTwo(input){
+    if (deliveryAreaZipCodes.includes(input)) {
+        return `You're in our delivery zone!`
+    }
+    else {
+        return `Sorry, we can't deliver to that address`
+    }
+}
 
 
-
-
+console.log(canWeDeliverTwo(85205))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -124,11 +148,16 @@ const deals = [
 
 //CODE HERE
 
+let object1 = deals.filter((thing) => {
+    if (thing.title.includes('15')){
+    thing.title.replace('15% Off!', '10% Off!')
+
+    }
+    return thing
+})
 
 
-
-
-
+console.log(object1)
 
 
 /*

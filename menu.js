@@ -32,7 +32,14 @@
 
 //CODE HERE
 
-
+let pizza = {
+    name: 'Pizza',
+    price: 10,
+    category: 'Italian Food',
+    popularity: 9,
+    rating: 9,
+    tags: ['kids Menu options avalible', 'does have gluten-free options', 'does have Vegetarian options'],
+}
 
 
 
@@ -50,7 +57,7 @@
 
 //CODE HERE
 
-
+console.log(`The items popularity is a ${pizza.popularity} out of 10.`)
 
 
 
@@ -66,7 +73,7 @@
 
 //CODE HERE
 
-
+console.log(`This item ${pizza['tags[0]']} and ${pizza.tags[1]}.`)
 
 
 
@@ -83,10 +90,10 @@
 //CODE HERE
 
 
+let {price: pizzaPrice} = pizza
 
 
-
-
+console.log(pizzaPrice)
 
 
 /*
@@ -99,9 +106,9 @@
 //CODE HERE
 
 
+let {category} = pizza
 
-
-
+console.log(category)
 
 
 
@@ -119,11 +126,52 @@
 
 //CODE HERE
 
+const foodArr = [
+    {
+    name: 'Pizza',
+    price: 10,
+    category: 'Italian Meal',
+    popularity: 9,
+    rating: 9,
+    tags: ['kids menu options avalible', 'does have gluten-free options', 'does have vegetarian options'],
+    }, 
+    {
+    name: 'Pasta',
+    price: 10,
+    category: 'Italian Meal',
+    popularity: 7,
+    rating: 8,
+    tags: ['kids menu options avalible', 'no gluten-free options', 'does have vegetarian options'],
+    },
+    {
+    name: 'Cheeseburger',
+    price: 15,
+    category: 'American Meal',
+    popularity: 10,
+    rating: 10,
+    tags: ['no kids menu options avalible', 'no gluten-free options', 'does Not have vegetarian options'],
+    },
+    {
+    name: 'Soup',
+    price: 11,
+    category: 'Liquid Meal',
+    popularity: 5,
+    rating: 6,
+    tags: ['kids menu options avalible', 'does have gluten-free options', 'does have vegetarian options'],
+    },
+    {
+    name: 'Home-Made Bread Loaf',
+    price: 7,
+    category: 'Take-Home Food',
+    popularity: 8,
+    rating: 10,
+    tags: ['no kids menu options avalible', 'no gluten-free options', 'does have vegetarian options'],
+    }
+]
 
 
 
-
-
+// console.log(foodArr)
 
 
 //////////////////PROBLEM 4////////////////////
@@ -140,18 +188,12 @@
 
 //CODE HERE
 
+const findKidsMenu = foodArr.filter((look) => {
+    if (look.tags[0] === 'kids menu options avalible')
+    return look
+})
 
-
-
-
-
-
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
-
-
-
+console.log(findKidsMenu)
 
 
 
@@ -199,11 +241,15 @@
 //CODE HERE
 
 
+let filterByProperty = foodArr.filter(function (thing) {
+    return thing.rating >= 9 &&
+        thing.popularity >= 7 &&
+        thing.price >= 13;
+}
+);
 
 
-
-
-
+console.log(filterByProperty)
 
 /*
     Invoke the `filterByProperty` function passing
@@ -215,6 +261,6 @@
 //CODE HERE
 
 
-
+// filterByProperty(7, 10)
 
 
