@@ -217,6 +217,5 @@ console.log(changedDesc)
 
 
 
-
 //Again I spent way to long on the last problem and since this one was asking for a very similar thing I just used the code above as a blueprint for this code.
 //I'm pretty sure it's wrong but this was the best that I could get in the time that I had.
