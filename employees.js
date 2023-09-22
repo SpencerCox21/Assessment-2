@@ -23,6 +23,11 @@
 
 
 
+
+
+
+
+
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -35,12 +40,22 @@
 
 //CODE HERE
 
+
+
+
+
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
+
+
+
+
+
 
 
 /*
@@ -56,6 +71,12 @@
 */
 
 //CODE HERE
+
+
+
+
+
+
 
 
 
@@ -86,6 +107,11 @@
 
 
 
+
+
+
+
+
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
@@ -100,12 +126,24 @@
 //CODE HERE
 
 
+
+
+
+
+
+
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
 
 //CODE HERE
+
+
+
+
+
+
 
 /*
     Call the `addEmployee` method on the 
@@ -115,6 +153,12 @@
 
 //CODE HERE 
 
+
+
+
+
+
+
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -122,3 +166,9 @@
 */
 
 //CODE HERE
+
+
+
+
+
+

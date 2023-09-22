@@ -35,7 +35,17 @@ const cart = [
 
 //CODE HERE
 
+
+
+
+
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
+
+
+
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,6 +64,11 @@ const cart = [
 */
 
 //CODE HERE
+
+
+
+
+
 
 
 
@@ -80,6 +95,10 @@ const cart = [
 /*
     TEXT ANSWER HERE
 
+
+
+
+
 */
 
 /*
@@ -88,3 +107,9 @@ const cart = [
 */
 
 //CODE HERE
+
+
+
+
+
+

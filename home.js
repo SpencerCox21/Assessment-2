@@ -27,6 +27,10 @@
 
 
 
+
+
+
+
 //////////////////PROBLEM 2////////////////////
 /* 
     Below is an array of zip codes that are in
@@ -53,6 +57,12 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 
 
+
+
+
+
+
+
 /* 
     Problem 2 Continued
 
@@ -71,6 +81,12 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+
+
+
+
+
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -110,6 +126,11 @@ const deals = [
 
 
 
+
+
+
+
+
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -124,3 +145,9 @@ const deals = [
 */
 
 //CODE HERE
+
+
+
+
+
+

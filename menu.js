@@ -34,6 +34,12 @@
 
 
 
+
+
+
+
+
+
 //////////////////PROBLEM 2////////////////////
 /* 
     Let's print a few values from our pizza object.
@@ -43,6 +49,12 @@
 */
 
 //CODE HERE
+
+
+
+
+
+
 
 
 /*
@@ -55,6 +67,12 @@
 //CODE HERE
 
 
+
+
+
+
+
+
 /*
     Third, destructure the price off of the
     pizza object.
@@ -65,6 +83,12 @@
 //CODE HERE
 
 
+
+
+
+
+
+
 /*
     Fourth, and last, destructure the category
     property.
@@ -73,6 +97,12 @@
 */
 
 //CODE HERE
+
+
+
+
+
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -91,6 +121,11 @@
 
 
 
+
+
+
+
+
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -105,7 +140,20 @@
 
 //CODE HERE
 
+
+
+
+
+
+
+
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
+
+
+
+
+
 
 
 
@@ -151,6 +199,12 @@
 //CODE HERE
 
 
+
+
+
+
+
+
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -159,3 +213,8 @@
 */
 
 //CODE HERE
+
+
+
+
+
