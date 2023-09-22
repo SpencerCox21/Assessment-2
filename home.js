@@ -134,7 +134,7 @@ const deals = [
     {
         title: 'Free Kids Meal with 2 Regular Entrees', 
         desc: '   This deal lasts until the end of March! '
-    }
+    },
 ]
 
 /*
@@ -148,16 +148,34 @@ const deals = [
 
 //CODE HERE
 
-let object1 = deals.filter((thing) => {
-    if (thing.title.includes('15')){
-    thing.title.replace('15% Off!', '10% Off!')
-
+let change15 = deals.map((thing) => {
+    let newTitle = '';
+    if (thing.title === "15% Off!"){
+        newTitle = thing.title.replace('15', '10')
     }
-    return thing
-})
+    else {
+        newTitle = thing.title
+    }
+    return newTitle;
+  });
 
 
-console.log(object1)
+
+
+const changedTitle = change15
+
+
+
+
+console.log(changedTitle)
+
+
+//Note, I'm not sure if this is the answer but I have spent no less then 4 hours on just this section of code.
+//This is the best output that I have gotten and I only have so much time in the weekend. 
+//The thing that I was struggleing to do was to replace 15% with 10% and still have it output the array of objects.
+
+
+// console.log(deals)
 
 
 /*
@@ -176,7 +194,29 @@ console.log(object1)
 //CODE HERE
 
 
+let changeMarch = deals.map((thing) => {
+    let newDesc = '';
+    if (thing.desc.includes('March')){
+        newDesc = thing.desc.replace('March', 'April')
+    }
+    else {
+        newDesc = thing.desc
+    }
+    return newDesc;
+  });
 
 
 
 
+const changedDesc = changeMarch
+
+
+
+
+console.log(changedDesc)
+
+
+
+
+//Again I spent way to long on the last problem and since this one was asking for a very similar thing I just used the code above as a blueprint for this code.
+//I'm pretty sure it's wrong but this was the best that I could get in the time that I had.
