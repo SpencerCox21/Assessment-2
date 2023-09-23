@@ -189,7 +189,7 @@ const foodArr = [
 //CODE HERE
 
 const findKidsMenu = foodArr.filter((look) => {
-    if (look.tags[0] === 'no kids menu options avalible')
+    if (look.tags[0] === 'kids menu options avalible')
     return look
 })
 
@@ -240,7 +240,7 @@ console.log(findKidsMenu)
 
 //CODE HERE
 
-
+/*
 let filterByProperty = foodArr.filter(function(thing) {
     return thing.rating >= 9 &&
         thing.popularity >= 7 &&
@@ -250,6 +250,9 @@ let filterByProperty = foodArr.filter(function(thing) {
 
 
 console.log(filterByProperty)
+
+
+*/
 
 /*
     Invoke the `filterByProperty` function passing
