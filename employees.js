@@ -21,7 +21,17 @@
 
 //CODE HERE
 
+class Employee{
+    constructor(name, shifts){
+        this.name = name;
+        this.shift = shifts
+    }
 
+
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shift}`)
+    }
+}
 
 
 
@@ -40,9 +50,9 @@
 
 //CODE HERE
 
+let empOne = new Employee('Jess', 'Weekday mornings, Weekday afternoons');
 
-
-
+// console.log(empOne)
 
 
 /*
@@ -52,8 +62,8 @@
 
 //CODE HERE
 
-
-
+empOne.getSchedule()
+// console.log(empOne.getSchedule())
 
 
 
@@ -73,10 +83,10 @@
 //CODE HERE
 
 
+let empTwo = {...empOne}
+empTwo.name = empTwo.name.replace('Jess', 'Nick')
 
-
-
-
+// console.log(empTwo)
 
 
 
@@ -105,10 +115,24 @@
 
 //CODE HERE
 
+class Manager extends Employee{
+    constructor(name, shifts, employees){
+        super(name, shifts);
+
+        this.employees = employees;
+    }
 
 
+    getEmployee(){
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+
+    addEmployee(emp){
+        this.employees.push(emp);
+    }
 
 
+}
 
 
 
@@ -126,9 +150,9 @@
 //CODE HERE
 
 
+let manager = new Manager('Winston', 'weekday mornings, weekday afternoons', ['Cece',  ' Schmidt'])
 
-
-
+// console.log(manager)
 
 
 
@@ -139,6 +163,8 @@
 
 //CODE HERE
 
+
+manager.getEmployee()
 
 
 
@@ -154,7 +180,7 @@
 //CODE HERE 
 
 
-
+manager.addEmployee(' Thomas')
 
 
 
@@ -168,7 +194,7 @@
 //CODE HERE
 
 
-
+manager.getEmployee()
 
 
 
