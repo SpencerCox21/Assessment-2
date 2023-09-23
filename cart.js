@@ -35,12 +35,17 @@ const cart = [
 
 //CODE HERE
 
+const findPrices = cart.map((thing) => {
+    return thing.price;
+})
 
 
 
+const summedPrice = findPrices.reduce((a, b) => {
+    return a + b
+})
 
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+console.log(summedPrice)
 
 
 
@@ -65,10 +70,13 @@ const cart = [
 
 //CODE HERE
 
+function calcFinalPrice(cartCost, couponValue, tax){
+    let taxedPrice = cartCost * tax;
+    return taxedPrice - couponValue
+}
 
 
-
-
+console.log(calcFinalPrice(summedPrice, 4, 1.10))
 
 
 
@@ -95,6 +103,14 @@ const cart = [
 /*
     TEXT ANSWER HERE
 
+I was still thinking in the consept of what a store would need for their customer information, since this assessment has mainly been dealing with carts.
+I will make a list of information that a grocery store could need to make an account for a customer who wants to make a rewards account.
+First name, because there needs to be a name to put the account under.
+Second phoneNumber, also there to verify the account. Since people can have the same name it'll be good to have another form of ID to assign the account.
+Third email, because every store need to have your email to send you all of their occasional coupons but mostly spam emails to.
+Forth a membership card, that the coustomer can use to get reward points.
+Fifth the membership card number, so that reward points can be given to the correct card.
+Sixth the reward points, so that the costomer could be rewarded and encouraged to shop at your store.
 
 
 
@@ -108,8 +124,17 @@ const cart = [
 
 //CODE HERE
 
+/*
 
 
+{
+    fullName: 'string',
+    phoneNumber: number,
+    email: 'string',
+    membershipCard: boolean,
+    CardNumber: number,
+    rewardPoints: number,
+}
 
 
-
+*/
