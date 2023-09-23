@@ -149,30 +149,20 @@ const deals = [
 //CODE HERE
 
 let change15 = deals.map((thing) => {
-    let newTitle = '';
+
     if (thing.title === "15% Off!"){
-        newTitle = thing.title.replace('15', '10')
+        thing.title = thing.title.replace('15', '10')
     }
-    else {
-        newTitle = thing.title
-    }
-    return newTitle;
+   
+    return thing;
   });
 
 
 
 
-const changedTitle = change15
+console.log(change15)
 
 
-
-
-console.log(changedTitle)
-
-
-//Note, I'm not sure if this is the answer but I have spent no less then 4 hours on just this section of code.
-//This is the best output that I have gotten and I only have so much time in the weekend. 
-//The thing that I was struggleing to do was to replace 15% with 10% and still have it output the array of objects.
 
 
 // console.log(deals)
@@ -195,27 +185,16 @@ console.log(changedTitle)
 
 
 let changeMarch = deals.map((thing) => {
-    let newDesc = '';
     if (thing.desc.includes('March')){
-        newDesc = thing.desc.replace('March', 'April')
+        thing.desc = thing.desc.replace('March', 'April')
     }
-    else {
-        newDesc = thing.desc
-    }
-    return newDesc;
+    return thing;
   });
 
 
 
 
-const changedDesc = changeMarch
+console.log(changeMarch)
 
 
 
-
-console.log(changedDesc)
-
-
-
-//Again I spent way to long on the last problem and since this one was asking for a very similar thing I just used the code above as a blueprint for this code.
-//I'm pretty sure it's wrong but this was the best that I could get in the time that I had.
