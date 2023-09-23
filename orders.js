@@ -31,6 +31,24 @@
 
 //CODE HERE
 
+class Ticket {
+    constructor(items, orderTime, customerId) {
+        this.items = items;
+        this.orderTime = orderTime;
+        this.customerId = customerId;
+    }
+
+
+
+    updateStatus(newStatus) {
+        this.status = newStatus
+        console.log(`${this.customerId} is now ${this.status}.`)
+    }
+
+        
+
+    
+}
 
 
 
@@ -52,9 +70,9 @@
 
 //CODE HERE
 
+let firstTicket = new Ticket('Large Pep Pizza, 20 oz. Soda', '7:03 PM', 'Customer #43');
 
-
-
+console.log(firstTicket)
 
 
 
@@ -67,6 +85,7 @@
 
 //CODE HERE
 
+console.log(firstTicket.updateStatus("Ready for Pick-up"));
 
 
 
