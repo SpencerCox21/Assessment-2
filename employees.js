@@ -196,5 +196,3 @@ manager.addEmployee(' Thomas')
 
 manager.getEmployee()
 
-
-
